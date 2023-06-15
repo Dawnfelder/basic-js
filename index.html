@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to JavaScript</title>
+
+    <style>
+        section img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        article {
+            max-width: 900px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        html {
+            background: white;
+            color: black;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-container {
+            width: 900px;
+            display:flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body id="body">
+    
+    <main>
+        <h1>Hello, world!</h1>
+    
+        <article>
+        <hr>
+            <section id="trees">
+                <img id="trees__img" src="trees.avif" alt="picture of trees" height="400px">
+                <h2 id="trees__headline">My article about trees</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sit provident deserunt sed cum ullam soluta consequuntur ipsa placeat magnam! Velit mollitia nihil animi sapiente molestiae voluptates eveniet suscipit sint repellat sed cum ut quis expedita quisquam error reprehenderit, consequatur at ipsam facilis repellendus blanditiis modi. Dolore dignissimos eaque nulla.</p>
+            </section>
+
+        </article>
+
+        <article>
+        <hr>
+            <section id="mountains">
+                <img id="mountains__img" src="mountains.jpg" alt="picture of mountains" height="400px">
+                <h2 id="mountains__headline">My article about mountains</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sit provident deserunt sed cum ullam soluta consequuntur ipsa placeat magnam! Velit mollitia nihil animi sapiente molestiae voluptates eveniet suscipit sint repellat sed cum ut quis expedita quisquam error reprehenderit, consequatur at ipsam facilis repellendus blanditiis modi. Dolore dignissimos eaque nulla.</p>
+            </section>
+        </article>
+
+        <article>
+            <hr>
+                <section id="lake">
+                    <img id="lake__img" src="lake-day.jpg" alt="picture of a lake" height="400px">
+                    <button onclick="dusk()">See this view at dusk</button>
+                    <h2 id="mountains__headline">My article about mountains</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sit provident deserunt sed cum ullam soluta consequuntur ipsa placeat magnam! Velit mollitia nihil animi sapiente molestiae voluptates eveniet suscipit sint repellat sed cum ut quis expedita quisquam error reprehenderit, consequatur at ipsam facilis repellendus blanditiis modi. Dolore dignissimos eaque nulla.</p>
+                </section>
+            </article>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <button onclick="darkmode()">Turn off the lights</button>
+        </div>
+    </footer>
+
+    <script>
+        function darkmode() {
+            document.getElementById ("body").style.background = "black";
+            document.getElementById ("body").style.margin = 0;
+        }
+
+        function dusk() {
+            document.getElementById ("lake__img").src="lake-dusk.jpg";
+        }
+    </script>
+    
+</body>
+</html>
